@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.farmbee">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FarmBee">
+        <activity
+            android:name=".Manage_product"
+            android:exported="false" >
+
+        </activity>
+        <activity
+            android:name=".Login"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".FAdvice_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Product_Sell_farmer_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Pesticides_buy_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Customer_Home"
+            android:exported="false" />
+        <activity
+            android:name=".Customer_registration"
+            android:exported="false" />
+        <activity
+            android:name=".LaunchPage"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
+            android:name=".splash_screen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".CallResiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+                <action android:name="android.intent.action.AIRPLANE_MODE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
